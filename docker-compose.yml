@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+    setel_payment:
+        container_name: setel_payment
+        build: .
+        command: npm run start
+        ports:
+          - "4000:4000"
+networks:
+    nesjs-network:
